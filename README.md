@@ -9,6 +9,46 @@ Este proyecto implementa un sistema básico de gestión de tareas con una API RE
 * **Persistencia de Datos:** Utiliza SQLite para almacenar los usuarios.
 * **Cliente en Consola:** Una aplicación Python para interactuar con la API.
 
+## Instalación y Ejecución
+
+Instrucciones para ejecutar el proyecto:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/Gaby46Pe/PR-PFO2-GAP-B.git
+    cd pfo2-tareas
+    ```
+
+2.  **Crear y activar un entorno virtual:**
+    ```bash
+    python -m venv venv
+    # En Windows:
+    .\venv\Scripts\activate
+    # En Linux/macOS:
+    source venv/bin/activate
+    ```
+
+3.  **Instalar dependencias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    (Si no tiene `requirements.txt`, ejecutar `pip install Flask Flask-SQLAlchemy Werkzeug Flask-JWT-Extended requests` y luego `pip freeze > requirements.txt`).
+
+4.  **Ejecutar el Servidor Flask:**
+    Abrir una terminal, activar el entorno virtual (si no lo hiciste) y ejecutar:
+    ```bash
+    python servidor.py
+    ```
+    El servidor se iniciará en `http://127.0.0.1:5000`. Verás un archivo `tareas.db` aparecer en el directorio del proyecto.
+
+5.  **Ejecutar el Cliente en Consola:**
+Abre **otra terminal diferente**, activa el entorno virtual y ejecuta:
+    ```bash
+    python cliente.py
+    ```
+    Sigue el menú para registrar un usuario, iniciar sesión y acceder a las tareas.
+
+
 ## Endpoints de la API
 
 * **`POST /registro`**
@@ -46,4 +86,5 @@ Este proyecto implementa un sistema básico de gestión de tareas con una API RE
         * `200 OK`: Contenido HTML de la página de bienvenida.
         * `401 Unauthorized`: Si el token no es válido o está ausente.
 
- 
+## Capturas de pantalla de pruebas exitosas
+  ![Postman Login ok](screenshots/postman login ok pr pfo2.jpg)
