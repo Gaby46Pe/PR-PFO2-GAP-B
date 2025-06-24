@@ -87,4 +87,4 @@ Abre **otra terminal diferente**, activa el entorno virtual y ejecuta:
         * `401 Unauthorized`: Si el token no es válido o está ausente.
 
 ## Capturas de pantalla de pruebas exitosas
-  ![Postman Login ok]screenshots/postman login ok pr pfo2.jpg
+  ![Postman Login ok](screenshots/postman login ok pr pfo2.jpg)
